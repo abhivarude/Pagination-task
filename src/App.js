@@ -2,7 +2,8 @@
 import './App.css';
 
 import React from 'react';
-import {BrowserRouter,Route,Switch, Redirect} from "react-router-dom";
+
+import {BrowserRouter ,Redirect, Route, Switch } from 'react-router-dom';
 
 import Main from "./mainpage";
 
@@ -15,7 +16,7 @@ function App() {
       <BrowserRouter>
       <Switch>
         <Route path="/mainpage" component={Main} ></Route>
-      <Route exact path="/" ><Redirect to="/mainpage" ></Redirect></Route>
+      <Route exact path="/" component={Main}></Route>
      
       </Switch>
       
